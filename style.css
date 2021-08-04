@@ -1,0 +1,57 @@
+h1 {
+text-align: center;
+font-size: 260%;
+color:	#FF661A;
+
+}
+
+h2 {
+text-align: center;
+font-size: 180%;
+color:	#FF661A;
+
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	align-self: center;
+
+}
+
+.container {
+	text-align: center;
+	margin-top: 30px;
+
+}
+.btn{
+	font-size: 30px;
+	color: #26292E;
+	background-color: #FF661A;
+	border-color: #FF661A;
+	border-radius: 10px 10px 10px 10px;
+	transition: 0.8s;
+/*	width: 100%;
+	min-width: 200px;
+	max-width: 350px;
+	display: inline-grid;*/
+	margin: 20px 40px 20px 40px;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+}
+.btn:hover{
+	color: #FFFFFF;
+}
+
+body	{
+	margin: 0px;
+	background-color: #26292E;
+
+}
+footer {
+	text-align: center;
+	color: #FF661A;
+	margin-top: 20px;
+	font-family: 'Style Script', cursive;
+	}
