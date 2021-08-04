@@ -1,14 +1,23 @@
-h1 {
-text-align: center;
-font-size: 260%;
-color:	#FF661A;
+
+body	{
+	margin: 0px;
+	background-color: #26292E;
 
 }
 
+h1 {
+text-align: center;
+font-size: 330%;
+color:	#FF661A;
+margin-left: 20px;
+}
+
 h2 {
+margin-top: 0px;
 text-align: center;
 font-size: 180%;
 color:	#FF661A;
+margin-left: 20px;
 
 
 }
@@ -20,18 +29,31 @@ img {
 
 }
 
+.logo {
+	margin-left: 20px;
+	max-height: 155px;
+	max-width: 350px;
+}
+
 .container {
 	text-align: center;
 	margin-top: 30px;
 
+
 }
+
+.imgcont {
+	display: flex;
+	justify-content: center;
+}
+
 .btn{
 	font-size: 30px;
 	color: #26292E;
 	background-color: #FF661A;
 	border-color: #FF661A;
 	border-radius: 10px 10px 10px 10px;
-	transition: 0.8s;
+	transition: 0.6s;
 /*	width: 100%;
 	min-width: 200px;
 	max-width: 350px;
@@ -44,11 +66,29 @@ img {
 	color: #FFFFFF;
 }
 
-body	{
-	margin: 0px;
-	background-color: #26292E;
+.btn1:hover {
+	padding: 15px;
+}
+
+.btn2:hover {
+	padding: 15px;
+}
+
+.row {
+	display: flex;
 
 }
+.col {
+
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-self: center;
+}
+
+
+
+
 footer {
 	text-align: center;
 	color: #FF661A;
