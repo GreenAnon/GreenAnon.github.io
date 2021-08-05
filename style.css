@@ -10,6 +10,7 @@ text-align: center;
 font-size: 330%;
 color:	#FF661A;
 margin-left: 20px;
+margin-bottom: 20px;
 }
 
 h2 {
@@ -20,19 +21,46 @@ color:	#FF661A;
 margin-left: 20px;
 
 
+
+}
+
+hr {
+	position: relative;
+	/*margin-left: 75px;*/
+	width: 100%;
+	height: 2px;
+	background-color: #FF661A;
+	border-color: #FF661A;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
 	align-self: center;
+	border-radius: 50px 50px 50px 50px;
 
+
+}
+
+.col2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-bottom: 0px;
 }
 
 .logo {
 	margin-left: 20px;
 	max-height: 155px;
 	max-width: 350px;
+	content: url(https://www.zivilschutz-weinland.ch);
+
+}
+
+.logo:hover {
+	animation: pulse ;
+	animation-duration: 1s;
+
 }
 
 .container {
@@ -54,25 +82,28 @@ img {
 	border-color: #FF661A;
 	border-radius: 10px 10px 10px 10px;
 	transition: 0.6s;
+	cursor: pointer;
 /*	width: 100%;
 	min-width: 200px;
 	max-width: 350px;
 	display: inline-grid;*/
 	margin: 20px 40px 20px 40px;
-	padding: 5px 5px 5px 5px;
+	padding: 10px 10px 10px 10px;
 	text-align: center;
 }
 .btn:hover{
 	color: #FFFFFF;
+	animation: bounce ;
+	animation-duration: 2s;
 }
 
-.btn1:hover {
+/*.btn1:hover {
 	padding: 15px;
 }
 
 .btn2:hover {
-	padding: 15px;
-}
+	padding: 20px;
+}*/
 
 .row {
 	display: flex;
