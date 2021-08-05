@@ -1,133 +1,132 @@
-
-
+/*Der Teil der als Seite angezeigt wird
+Keinen Abstand nach aussen
+Farbe der Seite*/
 body	{
 	margin: 0px;
 	background-color: #26292E;
-
 }
+
+/*Der Titel Herzlich Willkommen und seine werte*/
 
 h1 {
-text-align: center;
-font-size: 380%;
-color:	#FF661A;
-margin-left: 20px;
-margin-bottom: 20px;
+text-align: center; 	/* Das der Titel immer in der Mitte angezeigt wird	*/
+font-size: 380%;		/* Die Schriftgrösse	*/
+color:	#FF661A;		/* Die Schriftfarbe	*/
+margin-left: 20px; 		/* Der Abstand zum Logo	*/
+margin-bottom: 20px; 	/* Der Abstand zur Linie unten */
 }
+
+/* Der 2. "Titel" auf der Seite...	*/
 
 h2 {
-margin-top: 15px;
-text-align: center;
-font-size: 220%;
-color:	#FF661A;
-margin-left: 20px;
-
-
-
+margin-top: 15px;		/* Der Abstand zur Linie	*/ 
+text-align: center;		/* Das der Text immer in der Mitte angezeigt wird	*/
+font-size: 220%;		/* Die Schriftgrösse	*/
+color:	#FF661A;		/* Die Schriftfarbe	*/
+margin-left: 20px;		/* Der Abstand zum Logo	*/
 }
+
+/* Die Linie zwischen dem Titel/Text	*/
 
 hr {
-	position: relative;
-	/*margin-left: 75px;*/
-	width: 100%;
-	height: 2px;
-	background-color: #FF661A;
-	border-color: #FF661A;
-	border-radius: 2px 2px 2px 2px;
+	position: relative;				/* Die Position wird an den Titel angepasst	*/
+	width: 100%;					/* Die Breite der Linie wird dem Titel angepasst */
+	height: 2px;					/* Die Höhe der Linie	*/
+	background-color: #FF661A;		/* Die Farbe der Linie	*/
+	border-color: #FF661A;			/* Die Farbe des Rahmens der Linie	*/
+	border-radius: 2px 2px 2px 2px;	/* Die Abrundung der Kanten der Linie	*/
 }
+
+/* Die Bilder	*/
 
 img {
-	max-width: 100%;
-	height: auto;
-	align-self: center;
-	border-radius: 50px 50px 50px 50px;
-/*	box-shadow: 5px 5px 4px grey;*/
-
+	max-width: 100%;					/* Die Breite des Bildes */
+	height: auto;						/* Die Höhe des Bildes wird angepasst */
+	align-self: center;					/* Bild in der Mitte des Containers */
+	border-radius: 50px 50px 50px 50px;	/* Abrundung der Ecken des Bildes */
 }
+
+/* Der Container mit dem Titel und der Linie */
 
 .col2 {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	margin-bottom: 0px;
+	display: flex;				/* Ermöglicht das automatische Anpassen */
+	flex-direction: column;		/* Dass die Linie unter dem Titel ist */
+	justify-content: flex-end;	/* Dass alles unten am Container ist */
+	margin-bottom: 0px;			/* Dass der Abstand zum Text unten 0 ist */
 }
+
+/* Masse für das Logo und link */
 
 .logo {
-	margin-left: 20px;
-	max-height: 155px;
-	max-width: 350px;
-	content: url(https://www.zivilschutz-weinland.ch);
+	margin-left: 20px;									/* Der Abstand zum linken Rand	*/
+	max-height: 155px;									/* Die maximale Höhe	*/
+	max-width: 350px;									/* Die maximale Breite	*/
+	content: url(https://www.zivilschutz-weinland.ch);	/* Der Link zur ZSO Seite	*/
 
 }
+
+/* Die Aktion wenn man über das Logo fährt	*/
 
 .logo:hover {
-	animation: pulse ;
-	animation-duration: 1.5s;
-	cursor: pointer;
+	animation: pulse ;			/* vergrössert das Logo	*/
+	animation-duration: 1.5s;	/* Dauer der Animation	*/
+	cursor: pointer;			/* Der Cursor ändert sich zu dem Finger	*/
 
 }
+
+/* Die Grundregeln für alle Container	*/
 
 .container {
-	text-align: center;
-	margin-top: 30px;
+	text-align: center;	/* Dass der Text immer in der Mitte angezeigt wird */
+	margin-top: 30px;	/* Dass die Container immer einen Abstand nach oben haben  */
 
 
 }
 
-.imgcont {
-	display: flex;
-	justify-content: center;
-
-}
+/* Die Buttons, ihr Aussehen usw.	*/
 
 .btn{
-	font-size: 30px;
-	color: #26292E;
-	background-color: #FF661A;
-	border-color: #FF661A;
-/*	border-radius: 10px 10px 10px 10px;*/
-	border-radius: 25px 25px 25px 25px;
-	transition: 0.6s;
-	cursor: pointer;
-/*	width: 100%;
-	min-width: 200px;
-	max-width: 350px;
-	display: inline-grid;*/
-	margin: 20px 40px 20px 40px;
-	padding: 10px 10px 10px 10px;
-	text-align: center;
+	font-size: 30px;					/* Die Schriftgrösse */
+	color: #26292E;						/* Die Schriftfarbe	*/
+	background-color: #FF661A;			/* Die Hintergrundfarbe	*/
+	border-color: #FF661A;				/* Die Randfarbe	*/
+	border-radius: 25px 25px 25px 25px;	/* Die Rundung des Buttons	*/
+	cursor: pointer;					/* Der Cursor wird zum Finger	*/
+	margin: 20px 40px 20px 40px;		/* Die Abstände um den Button	*/
+	padding: 10px 10px 10px 10px;		/* Die Abstände der Schrift zum Rand des Buttons	*/
+	text-align: center;					/* Dass der Text immer in der Mitte ist	*/
 }
+
+/* Die Funktion wenn man über die Buttons fährt */
+
 .btn:hover{
-	color: #FFFFFF;
-	animation: bounce ;
-	animation-duration: 2s;
+	color: #FFFFFF;			/* Schriftfarbe des Buttons */
+	animation: bounce ;		/* Die Animation beim darüberfahren */
+	animation-duration: 2s;	/* Die Dauer der Animation */
 }
 
-/*.btn1:hover {
-	padding: 15px;
-}
-
-.btn2:hover {
-	padding: 20px;
-}*/
+/* Damit das Logo links angezeigt wird */
 
 .row {
 	display: flex;
-
 }
+
+/* Die Anzeige des Headers */
+
 .col {
 
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-self: center;
+	display: flex;				/* Damit alles flexibel ist */
+	width: 100%;				/* Damit die Container immer die ganze Seite füllen */
+	justify-content: center;	/* Damit alles in der Mitte ist */
 }
 
 
-
+/* Der Text ganz unten an der Seite */
 
 footer {
-	text-align: center;
-	color: #FF661A;
-	margin-top: 20px;
-	font-family: 'Style Script', cursive;
+	text-align: center;						/* Damit der Text in der Mitte ist */
+	color: #FF661A;							/* Die Schriftfarbe */
+	margin-top: 20px;						/* Der Abstand zum Teil darüber */
+	margin-bottom: 20px;					/* Der Abstand zum Ende der Seite */
+	font-family: 'Style Script', cursive;	/* Die Schriftart */
 	}
