@@ -45,6 +45,11 @@ img {
 	align-self: center;					/* Bild in der Mitte des Containers */
 	border-radius: 50px 50px 50px 50px;	/* Abrundung der Ecken des Bildes */
 }
+/* Der Abstand des Bildes zu den Aussenseiten der Seite  */
+.imgcont {
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
 /* Der Container mit dem Titel und der Linie */
 
@@ -109,6 +114,38 @@ img {
 
 .row {
 	display: flex;
+}
+/* Die Anpassung der Anzeige wenn das Fenster weniger als 730px breit ist  */
+@media only screen and (max-width: 730px){
+	h1 {
+		font-size: 200%;
+	}
+	h2 {
+		font-size: 150%;
+	}
+	.logo {
+		max-width: 250px;
+		max-height:	110px;
+	}
+		.btn {
+		font-size: 25px;
+	}
+}
+/* Die Anpassung der Anzeige wenn das Fenster weniger als 480px breit ist  */
+@media only screen and (max-width: 480px){
+	h1 {
+		font-size: 150%;
+	}
+	h2 {
+		font-size: 120%;
+	}
+	.logo {
+		max-width: 150px;
+		max-height:	66px;
+	}
+	.btn {
+		font-size: 20px;
+	}
 }
 
 /* Die Anzeige des Headers */
